@@ -8,7 +8,7 @@ model = models.load_model("btc_model.keras")
 
 class_names = ['Glioma', 'Meningioma', 'No Tumor', 'Pituitary']
 
-img_path = '../brain-tumor-class/brain.jpeg'
+img_path = '../brain-tumor-class/testing images/brain.jpeg'
 img = cv.imread(img_path)
 img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
 img = cv.resize(img, (64, 64))
